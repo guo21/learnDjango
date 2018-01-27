@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    {% for post in post_list %}
+
+        <article class="post post-1">
+            <header class="entry-header">
+                <h1 class="entry-title">
+                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                </h1>
+                ...
+            </header>
+            <div class="entry-content clearfix">
+                ...
+                <div class="read-more cl-effect-14">
+                    <a href="{{ post.get_absolute_url }}" class="more-link">Continue details <span
+                            class="meta-nav">→</span></a>
+                </div>
+            </div>
+        </article>
+    {% empty %}
+        <div class="no-post">No post now</div>
+    {% endfor %}
+
+    <div class="pagination">
+        <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">...</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li class="current"><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">...</a></li>
+            <li><a href="">11</a></li>
+        </ul>
+    </div>
+{% endblock main %}
