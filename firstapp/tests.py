@@ -52,5 +52,60 @@ def lengthOfLongestSubstring(s):
 
     return maxsubstr
 
-t= 'cbc'
-print(lengthOfLongestSubstring(t))
+def bracket_match(bracket_string):
+    tmp = []
+    res = 0
+    for i in bracket_string:
+        if i == '(':
+            tmp.append(i)
+        elif i == ')' and len(tmp)!=0:
+            tmp.pop()
+        else:
+            res +=1
+    return res+len(tmp)
+
+
+
+def solution(t):
+    ind = []
+    res = []
+    deep = 10
+    # ind 相当于一个hash table 记录当前路径下的index,初始化为0
+    # res 用来存储结果并返回
+    for i in range(deep):
+        ind.append(0)
+    #先暂时设置了最大深度是10，可变
+    prev_len = 10
+    for s in t:
+        ss = s.split(' ');
+        tmp_len = len(ss[0])
+        ind[tmp_len-1]+=1
+        tem = ''
+        if tmp_len<prev_len:
+            for i in range(tmp_len, prev_len):
+                ind[i]=0
+        prev_len = tmp_len
+        for i in range(len(ss[0])):
+            tem+=(str(ind[i])+'.')
+        tem = tem[0:len(tem)-1]
+        res+=[{"hn":tem, "title": ss[1]}]
+
+    return res
+
+t = ["# a", "## b", "## c", "### d", "# d", "## e", "### f", "## g"]
+rest = [{"hn": "1", "title": "a"},
+{"hn": "1.1", "title": "b"},
+{"hn": "1.2", "title": "c"},
+{"hn": "1.2.1", "title": "d"},
+{"hn": "2", "title": "e"}]
+aa = solution(t)
+print(aa)
+# for i in range(len(aa)):
+#     assert(rest[i]['hn']==aa[i]['hn'] and rest[i]['title']==aa[i]['title'])
+# def addDigits(num):
+#
+#     # 数根dr(n)=1+((n-1)mod 9)
+#     res = 1 + ((num -1)%9)
+#     return res
+#
+# assert(addDigits(38)==2)
