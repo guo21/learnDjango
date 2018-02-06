@@ -16,10 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.urls import include, path
 from django.contrib import admin
+from blog.feeds import AllPostsRssFeed
 
 urlpatterns = [
     path('firstapp/', include('firstapp.urls')),
     path(r'', include('blog.urls')),
     path('admin/', admin.site.urls),
     path(r'', include('comments.urls')),
+    url(r'^all/rss/$', AllPostsRssFeed(), name='rss'),
+    url(r'^search/', include('haystack.urls')),
 ]
