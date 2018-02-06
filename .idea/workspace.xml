@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/comments/views.py" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de779d17-0502-408e-b909-aac769ae2021" name="Default" comment="add tags and search features and update requirements.txt">
+    <list default="true" id="de779d17-0502-408e-b909-aac769ae2021" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -613,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517894842134</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rm db again wtf?">
+      <created>1517895987566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1517895987566</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -656,7 +663,8 @@
     <MESSAGE value="forgot to add requirements.." />
     <MESSAGE value="remove db and add gitignore" />
     <MESSAGE value="add tags and search features and update requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tags and search features and update requirements.txt" />
+    <MESSAGE value="rm db again wtf?" />
+    <option name="LAST_COMMIT_MESSAGE" value="rm db again wtf?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
