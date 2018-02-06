@@ -4,24 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/comments/views.py" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de779d17-0502-408e-b909-aac769ae2021" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/feeds.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/search_indexes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/whoosh_cn_backend.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/search/indexes/blog/post_text.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/search/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+    <list default="true" id="de779d17-0502-408e-b909-aac769ae2021" name="Default" comment="add tags and search features and update requirements.txt">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" afterPath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/urls.py" afterPath="$PROJECT_DIR$/blog/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnDjango/settings.py" afterPath="$PROJECT_DIR$/learnDjango/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnDjango/urls.py" afterPath="$PROJECT_DIR$/learnDjango/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/detail.html" afterPath="$PROJECT_DIR$/templates/blog/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/index.html" afterPath="$PROJECT_DIR$/templates/blog/index.html" />
     </list>
     <ignored path="learnDjango.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,16 +89,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,7 +99,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="whoosh_cn_backend.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="whoosh_cn_backend.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/whoosh_cn_backend.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
@@ -132,6 +107,16 @@
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -621,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517860124053</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add tags and search features and update requirements.txt">
+      <created>1517894842134</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1517894842134</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -663,7 +655,8 @@
     <MESSAGE value="added sth to support aws" />
     <MESSAGE value="forgot to add requirements.." />
     <MESSAGE value="remove db and add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove db and add gitignore" />
+    <MESSAGE value="add tags and search features and update requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tags and search features and update requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -927,14 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/feeds.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1069,6 +1054,14 @@
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
