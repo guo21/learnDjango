@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    {% if error_msg %}
+        <p>{{ error_msg }}</p>
+    {% endif %}
+
+    <h1 class="page-title">About Me</h1>
+    <article class="post">
+        <div class="entry-content clearfix">
+            <figure class="img-responsive-center">
+                <img class="img-responsive" src="img/me.jpg" alt="Developer Image">
+            </figure>
+            <p>My Name is Gerald, and I'm from China. Now I live in Baltimore, MD, USA. I just graduated from Johns
+                Hopkins University and got my Master degree in Security Informatics in Dec 2017. Currently unemployed
+                FeelsBadMan. I'm seeking for full-time software developer positions. And I speed most of the time
+                refreshing my computer programming knowledge now. Because after spent about one and a half years
+                learning information security and hacker's stuff, I found out I don't have any talent in this field
+                (MonkaS). So, I decided to go back and do some programming stuff. If you want to know more about my
+                technical skills, please check out my LinkedIn link below.<br> In my spare time, I like playing
+                basketball and video games such as PUBG, CS: GO and DotA2. My favorite NBA teams are Celtics and
+                Mavericks; favorite players are Kyrie Irving and Dirk Nowitzki. I also watch animes, and I think Gintama
+                is the best.</p>
+            <p>
+                我是郭二幺，中国人。现居住在美国马里兰州巴尔的摩市。去年十二月刚获得信息安全专业硕士学位，目前处于待业状态(捂脸。
+                目前在找软件开发相关的全职工作，因为学了一年半后发现自己不是搞安全的料...所以决定回去搞开发。如果您想了解更多关于
+                我的专业方面的相关信息请戳下方LinkedIn链接。<br>
+                我现在大部分时间在重新复习软件开发相关知识。空闲时间喜欢打篮球，打游戏(PUBG, CS:GO, DotA2)，看动漫(银魂赛高)。</p>
+            <div class="height-40px"></div>
+            <h2 class="title text-center">Social</h2>
+            <ul class="social">
+                <li class="linkedin"><a href="https://www.linkedin.com/in/yunlong-guo-6ba28b124/"><span
+                        class="ion-social-linkedin"></span></a></li>
+                <li class="twitter"><a href="https://twitter.com/gerald_guo21"><span class="ion-social-twitter"></span></a>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+{% endblock main %}
